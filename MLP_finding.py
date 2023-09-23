@@ -558,10 +558,10 @@ def main():
 
     weighted_matrix = read_weighted_matrix(outputpath)
 
-    outfile3 = open(os.path.join(outputpath, "matrix_filtered_similirity.txt"), "w+")
-    outfile4 = open(os.path.join(outputpath, "matrix_cumulative_sample.txt"), "w+")
-    outfile5 = open(os.path.join(outputpath, "matrix_cumulative_percent.txt"), "w+")
-    outfile6 = open(os.path.join(outputpath, "matrix_inheritage_blocks.txt"), "w+")
+    outfile3 = open(os.path.join(outputpath, "matrix_contribution_percentage.txt"), "w+")
+    outfile4 = open(os.path.join(outputpath, "matrix_cumulative_contribution_percentage_sample.txt"), "w+")
+    outfile5 = open(os.path.join(outputpath, "matrix_cumulative_contribution_percentage.txt"), "w+")
+    outfile6 = open(os.path.join(outputpath, "matrix_MLP_blocks.txt"), "w+")
 
     outfile3.write("query" + "\t" + "\t".join(targetsamples) + "\n")
     outfile4.write("query" + "\t" + "\t".join([str(i) for i in range(1, (len(targetsamples) + 1))]) + "\n")
